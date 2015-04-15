@@ -1,6 +1,6 @@
 #GibGab
 
-Redifine Chat. Redefine Email. Redefine Voice. Redefine Video. Redefining communication and the way work gets done today.
+Redefine Chat. Redefine Email. Redefine Voice. Redefine Video. Redefining communication and the way work gets done today.
 
 GibGab is a communication app that integrates everything a business needs while allowing for more productive and efficient conversations. Our goal is to make Chat, Email, Voice, and Video seamless and effortless by handling this all within GibGab so we can stop jumping between several applications to communicate.
 
