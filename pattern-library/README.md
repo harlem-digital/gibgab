@@ -17,5 +17,6 @@ Keeping track of the individual elements that will be combined to make a beautif
   * Checkboxes
   * Selectboxes
 * Navigation
+  * Main Navigation
   * Sidebar
   * Dropdown
