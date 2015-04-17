@@ -1,10 +1,44 @@
+// --------------------------------------
+// Paths
+// --------------------------------------
+
+$base-path: '/images';
+$dev-path: '../images';
+$path: $dev-path;
+
+// --------------------------------------
+// Variables
+// --------------------------------------
+
 $black-01: #000;
 $white-01: #fff;
 
-body {
+// --------------------------------------
+// Reset
+// --------------------------------------
+
+html, body {
 	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
 }
 
-p {
-	margin: 0;
+html { -webkit-text-size-adjust: none; }
+
+main {
+	display: block;
+	position: relative;
+}
+
+a { cursor: pointer; }
+
+// --------------------------------------
+// Page
+// --------------------------------------
+
+body {
+	background: url(#{$path}/background.jpg) center center;
+	background-size: auto 100%;
 }
