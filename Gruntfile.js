@@ -15,23 +15,18 @@ module.exports = function(grunt) {
 	var option = '';
 
 	var env = {
-		app: 'app',
 		dev: 'dev',
-		site: 'site',
-		splash: 'site/splash'
+		app: 'dev/app',
+		site: 'dev/site',
+		splash: 'dev/site/splash',
+		patternLibrary: 'pattern-library'
 	}
 
-    if(grunt.option('env') || grunt.option('theme')) {
+    if(grunt.option('env')) {
     	
-    	// If grunt option is env, then set option to env, else set option to theme
-    	option = grunt.option('env') ? 'env' : 'theme';
-
-    	// Set the target
-    	if (option === 'theme') {
-    		target = env.theme+'/'+grunt.option(option);
-    	} else {
-    		target = grunt.option(option);
-    	}
+    	// If grunt option is env, then set option to env
+    	option = grunt.option('env');
+    	target = env[option];
 
     }
 
