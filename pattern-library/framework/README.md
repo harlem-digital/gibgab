@@ -4,22 +4,20 @@
 
 * /app
   * global
-  * _base
-  * _components
   * /base
+    * _core
     * _reset
     * /swatches
       * _core
-      * _variables
+      * _settings
       * _helpers
     * /grid
       * _core
-      * _variables
+      * _settings
       * _helpers
       * _layout
     * /typography
       * _core
-      * _variables
       * _settings
       * _helpers
       * _fonts
@@ -31,19 +29,18 @@
       * _html-selector
       * _mouse-hover
       * _strip-units
-      * _em
-      * _rem
+      * _ems
+      * _rems
       * _picture
       * _ie
   * /components
-    * _button
-    * _list
+    * _core
+    * _buttons
+    * _lists
     * _dropdown
     * _navigation
     * _image
-    * _icon
-    * _typography
-    * _grid
+    * _icons
     * /form
       * _core
       * _textboxes
