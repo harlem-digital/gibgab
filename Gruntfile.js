@@ -6,8 +6,7 @@ module.exports = function(grunt) {
 
 	/*
 	 * grunt watch -env=dev
-	 * grunt watch -env=website
-	 * grunt watch -theme=theme-name
+	 * grunt watch -env=site
 	 *
 	 */
 
@@ -18,7 +17,7 @@ module.exports = function(grunt) {
 		dev: 'dev',
 		site: 'site',
 		splash: 'site/splash',
-		patternLibrary: 'pattern-library/patterns'
+		patternLibrary: 'pattern-library'
 	}
 
     if(grunt.option('env')) {
@@ -26,6 +25,9 @@ module.exports = function(grunt) {
     	// If grunt option is env, then set option to env
     	option = grunt.option('env');
     	target = env[option];
+
+    	console.log(option);
+    	console.log(target);
 
     }
 
@@ -38,7 +40,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			js: {
-				files: ['<%= config.target %>/js/**/{,*/}*.js'],
+				files: ['<%= config.target %>/**/{,*/}*.js'],
 				tasks: ['newer:jshint:dist'],
 				options: {
 					reload: true,
@@ -47,7 +49,7 @@ module.exports = function(grunt) {
 			},
 
 			css: {
-				files: ['<%= config.target %>/css/**/{,*/}*.scss'],
+				files: ['<%= config.target %>/**/{,*/}*.scss'],
 				tasks: ['sass','newer:autoprefixer:dist'],
 				options: {
 					reload: true,
@@ -62,16 +64,16 @@ module.exports = function(grunt) {
 				sourcemap: 'none',
 				precision: 7,
 				lineNumbers: true,
-				loadPath: '<%= config.target %>/css/',
+				loadPath: '<%= config.target %>/',
 				trace: true,
 				update: true
 			},
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/css/',
+					cwd: '<%= config.target %>/',
 					src: ['**/{,*/}*.scss'],
-					dest: '<%= config.target %>/css/',
+					dest: '<%= config.target %>/',
 					ext: '.css'
 				}]
 			}
@@ -85,7 +87,7 @@ module.exports = function(grunt) {
             dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/js/something',
+					cwd: '<%= config.target %>/',
 					src: ['**/{,*/}*.js']
 				}]
 			}
@@ -95,9 +97,9 @@ module.exports = function(grunt) {
             dist: {
             	files: [{
 	            	expand: true,
-					cwd: '<%= config.target %>/css/',
+					cwd: '<%= config.target %>/',
 					src: '**/{,*/}*.css',
-					dest: '<%= config.target %>/css/'
+					dest: '<%= config.target %>/'
 				}]
             }
         },
@@ -109,9 +111,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/css/',
+					cwd: '<%= config.target %>/',
 					src: ['**/{,*/}.css'],
-					dest: '<%= config.target %>/css'
+					dest: '<%= config.target %>/'
 				}]
 			}
 		},
@@ -126,9 +128,9 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= config.target %>/js/',
+					cwd: '<%= config.target %>/',
 					src: '**/{,*/}*.js',
-					dest: '<%= config.target %>/js',
+					dest: '<%= config.target %>/',
 					ext: '.min.js'
 				}]
 			}
