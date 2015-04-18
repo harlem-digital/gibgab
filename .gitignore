@@ -1,4 +1,5 @@
 .DS_Store
 .sass-cache
 .tmp
+pattern-library/*.css
 node_modules
