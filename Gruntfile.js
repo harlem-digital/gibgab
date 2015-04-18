@@ -16,10 +16,9 @@ module.exports = function(grunt) {
 
 	var env = {
 		dev: 'dev',
-		app: 'dev/app',
-		site: 'dev/site',
-		splash: 'dev/site/splash',
-		patternLibrary: 'pattern-library'
+		site: 'site',
+		splash: 'site/splash',
+		patternLibrary: 'pattern-library/patterns'
 	}
 
     if(grunt.option('env')) {
