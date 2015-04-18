@@ -8,6 +8,7 @@ GibGab is a communication app that integrates everything a business needs while 
 
 * Chat
 * Email
+* Fax
 * Voice
 * Video
 * Storage
@@ -31,7 +32,7 @@ GibGab is a communication app that integrates everything a business needs while 
 
 Chat is the core of the GibGab application. It is the way all internal teams communicate with one another.
 
-* **Direct Messages:** A user can direct message another user or group of users.
+* **Direct Messages:** A user can direct message another in-network user or group of in-network users.
 * **Channels:** Channels are a way for a group of users to communicate on a topic or project.
 * **Search:** Search makes sifting through messages and channels easily.
 
@@ -49,3 +50,14 @@ Voice will be versatile in a way that feels like most chat applications, such as
 * **Internal:** Users will be able to select a user or multiple users to have a voice chat with.
 * **External:** A person outside of the organization will be able to call the user directly.
 * **Conference:** A user can set up a conference call with multiple internal users or external people, similar to GotoMeeting.
+
+##Fax
+
+GibGab's users will have the ability to send and recieve faxes, fax messages will display inline along with voicemail and chat
+
+## Voice
+
+* **Calling:** A user can make a free call to another in-network user or group of in-network users.
+* **Call Forwarding:** A user can have calls forwarded to voicemail or another number.
+* **Voicemail Transcription:** A user can view a transcribed copy of their voicemails.
+>>>>>>> 662fc1527d78f3db83d52ee9ba5758e9cfcc54f3
