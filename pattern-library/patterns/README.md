@@ -2,12 +2,11 @@
 
 ##Components
 
-* button
-* list
+* buttons
+* lists
 * dropdown
 * navigation
 * image
-* icon
-* typography
+* icons
 * grid
 * form
