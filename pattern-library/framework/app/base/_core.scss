@@ -2,13 +2,13 @@
 // Base
 // --------------------------------------
 
-@import "app/base/helpers/core";
-@import "app/base/swatches/core";
-@import "app/base/typography/core";
+@import "helpers/core";
+@import "swatches/core";
+@import "typography/core";
 
 // -------------------
 // Layout
 // -------------------
 
-@import "app/base/reset";
-@import "app/base/grid/core";
+@import "reset";
+@import "grid/core";
