@@ -1,0 +1,57 @@
+/* line 28, styles.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 25px;
+}
+
+/* line 38, styles.scss */
+html {
+  -webkit-text-size-adjust: none;
+}
+
+/* line 40, styles.scss */
+main {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 50, styles.scss */
+body {
+  background: url(../images/background.jpg) center center;
+  background-size: cover;
+}
+
+/* line 55, styles.scss */
+main {
+  position: absolute;
+  bottom: 20%;
+}
+
+/* line 60, styles.scss */
+h1, h2 {
+  display: block;
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* line 68, styles.scss */
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 125px;
+  margin-bottom: 30px;
+}
+
+/* line 74, styles.scss */
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  font-style: italic;
+}
