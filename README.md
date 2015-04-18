@@ -37,7 +37,15 @@ Chat is the core of the GibGab application. It is the way all internal teams com
 
 ##Email
 
-While using GibGab's chat functionality will cut down on usage of email, there unfortunately isn't a way for **everyone** to avoid the use of email. As some employees will need to be communicating with outside vendors, clients, etc. So we try to incorporate email in a way that feels just like Chat.
+While using GibGab's chat functionality will cut down on usage of email, there unfortunately isn't a way for **everyone** to avoid the use of email. As some users will need to be communicating with outside vendors, clients, etc. So we try to incorporate Email in a way that feels just like Chat. The experience should be seamless.
 
 * **Subjects:** Describe the contents of the message
-* **Design:** The Email will have the exact look and feel of a Chat, except for the subject will always be prominent.
+* **Design:** The Email will have the exact look and feel of a Chat, except for the subject will always be shown.
+
+##Voice
+
+Voice will be versatile in a way that feels like most chat applications, such as Skype. The ultimate goal is to get rid of the use of desk phone or personal phones for work, and to use the application to hold any calls or conference calls. The use of phone numbers won't be completely eliminated as some users will need to communicate with outside vendors, clients, etc. So phone numbers will be assigned to users so people from outside an organization can reach particular users.
+
+* **Internal:** Users will be able to select a user or multiple users to have a voice chat with.
+* **External:** A person outside of the organization will be able to call the user directly.
+* **Conference:** A user can set up a conference call with multiple internal users or external people, similar to GotoMeeting.
