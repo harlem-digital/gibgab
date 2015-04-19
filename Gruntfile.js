@@ -134,11 +134,33 @@ module.exports = function(grunt) {
 					ext: '.min.js'
 				}]
 			}
-        }
+        },
+
+		sassdoc: {
+			default: {
+				src: 'pattern-library',
+				options: {
+					dest: 'pattern-library/sass-docs',
+					display: {
+						access: ['public', 'private'],
+						alias: true,
+						watermark: true,
+					},
+					groups: {
+						slug: 'Title',
+						helpers: 'Helpers',
+						hacks: 'Dirty Hacks & Fixes',
+						'undefined': 'Ungrouped',
+					},
+					basePath: 'https://github.com/SassDoc/grunt-sassdoc',
+				},
+			},
+		}
 
 	});
 
 	grunt.registerTask('default');
 	grunt.registerTask('build', ['autoprefixer', 'cssmin', 'uglify']);
+	grunt.registerTask('docs', ['sassdoc']);
 
 };
