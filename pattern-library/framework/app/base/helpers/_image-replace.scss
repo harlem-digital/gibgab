@@ -1,0 +1,7 @@
+/// Will hide text in an element.
+/// @author Kenneth Jackson
+
+@mixin image-replace() {
+	color: transparent;
+	overflow: hidden;
+}
